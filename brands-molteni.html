@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>nexus-parksoyeon</title>
+<style>
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+	}
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); 
+	}
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+	} 
+}
+
+@keyframes pulse {
+	0% {
+	-webkit-transform: translate(0, 0);
+			transform: translate(0, 0); 
+	}
+	50% {
+	-webkit-transform: translate(0, 10px);
+			transform: translate(0, 10px); 
+	}
+	100% {
+	-webkit-transform: translate(0, 0);
+			transform: translate(0, 0);
+	} 
+}
+
+.chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 20px;
+	position: relative;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 20px; 
+}
+
+.chevron.right:before {
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg); 
+}
+
+.chevron.bottom:before {
+	top: 0;
+	-webkit-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	transform: rotate(135deg); 
+}
+
+.chevron.left:before {
+	left: 0.25em;
+	-webkit-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg); 
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/brands-molteni.js"></script>
+<script src="fullpage/fullpage.js"></script>
+<link rel="stylesheet" href="fullpage/fullpage.css">
+<link rel="stylesheet" href="css/brands-molteni.css?var=4">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<header>
+	<div id="header-top">
+		<ul>
+			<li><a href="#" class="lang1">KR</a></li>
+			<li><a href="#" class="lang2">EN</a></li>
+			<li><a href="#" class="lang3">CN</a></li>
+		</ul>
+		<div class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></div>
+		<div class="sch"><a href="#"><img src="img/header_sch.png" alt="search"></a></div>
+		<input type="text" placeholder="search" id="mysearch" autofocus>
+		<span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+			<a href="nexus.html">NEXUS</a>
+			<a href="products.html">PRODUCTS</a>
+			<a href="brands.html">BRANDS</a>
+			<a href="news.html">NEWS</a>
+			<a href="contact.html">CONTACT</a>
+	  </div>
+	</div>
+	<span style="font-size:33px;cursor:pointer" onclick="openNav()" class="btn">&#9776;</span>
+	</div>
+
+	<div id="header-bottom">
+		<nav id="gnb">
+			<ul>
+				<li><a href="nexus.html">NEXUS</a></li>
+				<li><a href="products.html">PRODUCTS</a></li>
+				<li><a href="brands.html">BRANDS</a></li>
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>  
+
+<div id="fullpage">
+ 	<section class="section">
+		<h2 class="section-logo animate__animated animate__fadeIn"><img src="img/brands-molteni.png" alt="img"></h2>
+		<h3 class="section-logo2 animate__animated animate__fadeIn">“Past and future, research and tradition.<br> All in the name of—quality living..”</h3>
+		<span class="hero__scroll">
+			<p>Scroll down </p>
+			<i class="chevron bottom"></i>
+		</span>  
+	</section>
+	<section class="section">
+		<div class="history-img"><h2 class="history-title">HISTORY</h2></div>
+		<div class="line"><img src="img/line.png" alt="line"></div>
+		<div class="txt">
+			<div class="history-left">
+				<h4 class="history-left1">IN ITALY SINCE 1934</h4>
+				<div class="history-left2">Among the key players of Italian furniture culture.<br>
+				Leading—Italian designer furniture company for 80 years.</div>
+			</div>
+			<div class="history-right">
+				<p>이탈리아 가구의 상징 몰테니는 이탈리아 가구 산업을 이야기할 때 빼놓을 수 없는 브랜드다. 몰테니는 1934년 안젤로 몰테니에 의해 설립되었다. 브리안자 지역에 10만m² 규모의 공장을 보유하고 있으며 1934년대부터 1950년대까지 클래식 가구의 명망을 이어왔고, 그들의 스타일은 일명 ‘브리안자 스타일’로도 통하며 세계적인 명성을 유지하였다.</p><br>
+
+				<p>그 후, 안젤로의 아들 카를로 몰테니에 의해 몰테니는 지금의 세계적인 현대적 브랜드로 재탄생 되었다. 1970년대에 이르러 리빙 가구 브랜드는 몰테니(Molteni), 사무용 가구는 우니포(Unifor, Citterio), 그리고 주방 가구는 다다(Dada)로 세분화되면서 보다 전문적인 브랜딩 체계를 갖추게 되었다.</p><br>
+
+				<p>몰테니의 가장 큰 장점은 시스템화된 모듈 가구 형식으로 고급스럽지만 실용적이고 이탈리아 장인 정신이 깃들여진 완벽한 마감이 특징이다. 몰테니는 알도로시나 장 누벨, 노먼 포스터 등의 거장과의 협업을 통해 큰 주목을 끌었으며, 세계적인 명성의 몰테니 가구로는 1968년 루카 메다가 디자인한 ‘이리드(Iride)’등이 꼽힌다.</p>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="history-img2"><h2>COLLECTION</h2></div>
+		<div class="line"><img src="img/line.png" alt="line"></div>
+		<div class="collection-content">
+			<div class="collection-img1">
+				<div class="coll-1"></div>
+				<h3>01 – HERITAGE COLLECTION</h3>
+				<h4>D.655.2</h4>
+			</div>
+			<div class="collection-img2">
+				<div class="coll-2"></div>
+				<h3>02 – HERITAGE COLLECTION</h3>
+				<h4>D.859.1</h4>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="history-img3"><h2>BRAND DESINGER</h2></div>
+		<div class="line"><img src="img/line.png" alt="line"></div>
+		<div class="design-txt">
+			<h2 class="design-txt1">-  Gio ponti</h2>
+			<h4 class="design-txt2">“The majority of the objects in our lives are created and characterised by industry.”</h4>
+		</div>
+	</section>
+<div id="section3">
+	<h3 class="related">RELATED PRODUCTS</h3>
+	<div class="section3-box1"><a href="#">
+		<div class="section3-img"><img src="img/relate-1.jpg" alt="img"></div>
+		<div class="section3-txt">ARC</div></a>
+	</div>
+	<div class="section3-box2"><a href="#">
+		<div class="section3-img"><img src="img/relate-2.jpg" alt="img"></div>
+		<div class="section3-txt">DIAMOND</div></a>
+	</div>
+	<div class="section3-box3"><a href="#">
+		<div class="section3-img"><img src="img/relate-3.jpg" alt="img"></div>
+		<div class="section3-txt">GLISSMASTER-SISTEMA7</div></a>
+	</div>
+	<div class="section3-box4"><a href="#">
+		<div class="section3-img"><img src="img/relate-4.jpg" alt="img"></div>
+		<div class="section3-txt">ANTON</div></a>
+	</div>
+	
+</div>
+<div class="section fp-auto-height">
+<footer>
+	<div class="footer-inner">
+		<div class="more2"><a href="products.html">VIEW&nbsp;&nbsp;MORE&nbsp;&nbsp;PRODUCTS&nbsp;&nbsp;+</a></div>
+		<div class="footer-top">
+			<div class="logo3"><img src="img/logo.png" alt="로고"></div>
+			<ul class="footer-gnb">
+				<li><a href="nexus.html">NEXUS</a></li>
+				<li><a href="products.html">PRODUCTS</a></li>
+				<li><a href="brands.html">BRANDS</a></li>
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+			<div class="sns"><a href="#"><img src="img/insta.png" alt="인스타그램"></a></div>
+		</div>
+		<div class="footer-bottom">
+			<address>
+				(주)한샘넥서스&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서울시 서초구 방배로 285&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표이사 이영식&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사업자 등록번호 : 114-81-68690<br>
+				전화문의 SHOWROOM : +82 1670-1950      메일문의 : nexusgallery@nexus-official.com<br>
+				&copy; HANSSEM NEXUS 2020. All rights reserved
+			</address>
+			<div class="ad"><a href="#">개인정보취급방침</a></div>
+		</div>
+	</div>
+</footer>
+</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>nexus-parksoyeon</title>
+<style>
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+	}
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); 
+	}
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+	} 
+}
+
+@keyframes pulse {
+	0% {
+	-webkit-transform: translate(0, 0);
+			transform: translate(0, 0); 
+	}
+	50% {
+	-webkit-transform: translate(0, 10px);
+			transform: translate(0, 10px); 
+	}
+	100% {
+	-webkit-transform: translate(0, 0);
+			transform: translate(0, 0);
+	} 
+}
+
+.chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 20px;
+	position: relative;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 20px; 
+}
+
+.chevron.right:before {
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg); 
+}
+
+.chevron.bottom:before {
+	top: 0;
+	-webkit-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	transform: rotate(135deg); 
+}
+
+.chevron.left:before {
+	left: 0.25em;
+	-webkit-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg); 
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/brands-kettal.js"></script>
+<script src="fullpage/fullpage.js"></script>
+<link rel="stylesheet" href="fullpage/fullpage.css">
+<link rel="stylesheet" href="css/brands-kettal.css?var=3">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<header>
+	<div id="header-top">
+		<ul>
+			<li><a href="#" class="lang1">KR</a></li>
+			<li><a href="#" class="lang2">EN</a></li>
+			<li><a href="#" class="lang3">CN</a></li>
+		</ul>
+		<div class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></div>
+		<div class="sch"><a href="#"><img src="img/header_sch.png" alt="search"></a></div>
+		<input type="text" placeholder="search" id="mysearch" autofocus>
+		<span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+			<a href="nexus.html">NEXUS</a>
+			<a href="products.html">PRODUCTS</a>
+			<a href="brands.html">BRANDS</a>
+			<a href="news.html">NEWS</a>
+			<a href="contact.html">CONTACT</a>
+	  </div>
+	</div>
+	<span style="font-size:33px;cursor:pointer" onclick="openNav()" class="btn">&#9776;</span>
+	</div>
+
+	<div id="header-bottom">
+		<nav id="gnb">
+			<ul>
+				<li><a href="nexus.html">NEXUS</a></li>
+				<li><a href="products.html">PRODUCTS</a></li>
+				<li><a href="brands.html">BRANDS</a></li>
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div id="fullpage">
+ 	<section class="section">
+		<h2 class="section-logo animate__animated animate__fadeIn"><img src="img/brands-kettal.png" alt="img"></h2>
+		<h3 class="section-logo2 animate__animated animate__fadeIn">“Timeless and functional, expressive—furniture.”</h3>
+		<span class="hero__scroll">
+			<p>Scroll down </p>
+			<i class="chevron bottom"></i>
+		</span>  
+	</section>
+	<section class="section">
+		<div class="history-img"><h2>HISTORY</h2></div>
+		<div class="line"><img src="img/line.png" alt="line"></div>
+		<div class="txt">
+			<div class="history-left">
+				<h4 class="history-left1">IN SPAIN SINCE 1964</h4>
+				<div class="history-left2">Provides solutions to the emerging needs of modern life, based on a blend of creativity, customisation, innovation and modern production.</div>
+			</div>
+			<div class="history-right">
+				<p>케탈은 1966년 바로셀로나 외곽의 작은 해안 마을인 타라고나에서 탄생했다. 설립자 마누엘 알로르다는 아웃도어 가구 시장을 이끈 혁신적인 인물로 아웃도어 가구가 가져야 하는 본연의 기능에 충실하면서도, 개성 있고 세련된 디자인을 만든 것으로 알려졌다. 동시대를 대표하는 디자이너 파트리시아 우르퀴올라(Patricia Urquiola), 로낭&에르완 부훌렉 형제(Ronan & Erwan Bouroullec), 제스퍼 모리슨(Jasper Morrison), 에밀리아나 디자인 스튜디오(Emiliana Design studio) 등과 함께 협업하며, 기존의 아웃도어 가구와는 차별된 현대적이며 독창적인 컬렉션을 선보이고 있다.</p><br>
+
+                <p>케탈은 자연 친화적이며 재활용이 가능한 페인트를 사용하는 것으로 유명하다. 또한 세계 3대 열대우림 보육국인 인도네시아 국영영림공사 쁘르후따니(Perhutani) 인증을 받은 목재를 사용한다. 현재 바로셀로나에 7개의 직영 쇼룸과 뉴욕, 파리, 칸느, 런던, 마이애미, 마르베야 등 60개국에서 판매되고 있다.</p>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="history-img2"><h2>COLLECTION</h2></div>
+		<div class="line"><img src="img/line.png" alt="line"></div>
+		<div class="collection-img">
+			<div class="collection-img1">
+				<div class="coll-1"></div>
+				<h3>01 – CALA COLLECTION</h3>
+				<h4>CLUB ARMCHAIR ALUMINIUM</h4>
+			</div>
+			<div class="collection-img2">
+				<div class="coll-2"></div>
+				<h3>01 – CALA COLLECTION</h3>
+				<h4>SILLÓN BASKET</h4>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="history-img3"><h2>BRAND DESINGER</h2></div>
+		<div class="line"><img src="img/line.png" alt="line"></div>
+		<div class="design-txt">
+			<h2 class="design-txt1">-  Doshi Levien</h2>
+			<h4 class="design-txt2">
+			“Jonathan trained in fine cabinet making followed by industrial design.”</h4>
+		</div>
+	</section>
+<div id="section3">
+	<h3 class="related">RELATED PRODUCTS</h3>
+	<div class="section3-box1"><a href="#">
+		<div class="section3-img"><img src="img/relate-16.jpg" alt="img"></div>
+		<div class="section3-txt">MAIA COLLECTION</div></a>
+	</div>
+	<div class="section3-box2"><a href="#">
+		<div class="section3-img"><img src="img/relate-17.jpg" alt="img"></div>
+		<div class="section3-txt">BOMA COLLECTION</div></a>
+	</div>
+	<div class="section3-box3"><a href="#">
+		<div class="section3-img"><img src="img/relate-18.jpg" alt="img"></div>
+		<div class="section3-txt">CALA COLLECTION</div></a>
+	</div>
+	<div class="section3-box4"><a href="#">
+		<div class="section3-img"><img src="img/relate-19.jpg" alt="img"></div>
+		<div class="section3-txt">VIMINI COLLECTION</div></a>
+	</div>
+	
+</div>
+<div class="section fp-auto-height">
+<footer>
+	<div class="footer-inner">
+		<div class="more2"><a href="products.html">VIEW&nbsp;&nbsp;MORE&nbsp;&nbsp;PRODUCTS&nbsp;&nbsp;+</a></div>
+		<div class="footer-top">
+			<div class="logo3"><img src="img/logo.png" alt="로고"></div>
+			<ul class="footer-gnb">
+				<li><a href="nexus.html">NEXUS</a></li>
+				<li><a href="products.html">PRODUCTS</a></li>
+				<li><a href="brands.html">BRANDS</a></li>
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+			<div class="sns"><a href="#"><img src="img/insta.png" alt="인스타그램"></a></div>
+		</div>
+		<div class="footer-bottom">
+			<address>
+				(주)한샘넥서스&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서울시 서초구 방배로 285&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표이사 이영식&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사업자 등록번호 : 114-81-68690<br>
+				전화문의 SHOWROOM : +82 1670-1950      메일문의 : nexusgallery@nexus-official.com<br>
+				&copy; HANSSEM NEXUS 2020. All rights reserved
+			</address>
+			<div class="ad"><a href="#">개인정보취급방침</a></div>
+		</div>
+	</div>
+</footer>
+</div>
+</div>
+
+
+
+</body>
+</html>

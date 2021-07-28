@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>nexus-parksoyeon</title>
+<style>
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+	}
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); 
+	}
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+	} 
+}
+
+@keyframes pulse {
+	0% {
+	-webkit-transform: translate(0, 0);
+			transform: translate(0, 0); 
+	}
+	50% {
+	-webkit-transform: translate(0, 10px);
+			transform: translate(0, 10px); 
+	}
+	100% {
+	-webkit-transform: translate(0, 0);
+			transform: translate(0, 0);
+	} 
+}
+
+.chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 20px;
+	position: relative;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 20px; 
+}
+
+.chevron.right:before {
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg); 
+}
+
+.chevron.bottom:before {
+	top: 0;
+	-webkit-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	transform: rotate(135deg); 
+}
+
+.chevron.left:before {
+	left: 0.25em;
+	-webkit-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg); 
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/brands-gessi.js"></script>
+<script src="fullpage/fullpage.js"></script>
+<link rel="stylesheet" href="fullpage/fullpage.css">
+<link rel="stylesheet" href="css/brands-gessi.css?var=4">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<header>
+	<div id="header-top">
+		<ul>
+			<li><a href="#" class="lang1">KR</a></li>
+			<li><a href="#" class="lang2">EN</a></li>
+			<li><a href="#" class="lang3">CN</a></li>
+		</ul>
+		<div class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></div>
+		<div class="sch"><a href="#"><img src="img/header_sch.png" alt="search"></a></div>
+		<input type="text" placeholder="search" id="mysearch" autofocus>
+		<span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+			<a href="nexus.html">NEXUS</a>
+			<a href="products.html">PRODUCTS</a>
+			<a href="brands.html">BRANDS</a>
+			<a href="news.html">NEWS</a>
+			<a href="contact.html">CONTACT</a>
+	  </div>
+	</div>
+	<span style="font-size:33px;cursor:pointer" onclick="openNav()" class="btn">&#9776;</span>
+	</div>
+
+	<div id="header-bottom">
+		<nav id="gnb">
+			<ul>
+				<li><a href="nexus.html">NEXUS</a></li>
+				<li><a href="products.html">PRODUCTS</a></li>
+				<li><a href="brands.html">BRANDS</a></li>
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>   
+
+<div id="fullpage">
+ 	<section class="section">
+		<h2 class="section-logo animate__animated animate__fadeIn"><img src="img/brands-gessi.png" alt="img"></h2>
+		<h3 class="section-logo2 animate__animated animate__fadeIn">“The Warm modern sensibility of<br> american dessign, made in italy.”</h3>
+		<span class="hero__scroll">
+			<p>Scroll down </p>
+			<i class="chevron bottom"></i>
+		</span>  
+	</section>
+	<section class="section">
+		<div class="history-img"><h2 class="history-title">HISTORY</h2></div>
+		<div class="line"><img src="img/line.png" alt="line"></div>
+		<div class="txt">
+			<div class="history-left">
+				<h4 class="history-left1">IN ITALY SINCE 1992</h4>
+				<div class="history-left2">Enjoy personal spaces that offer a new sense of well—being, a daily wellness experience.</div>
+			</div>
+			<div class="history-right">
+				<p>제시는 2016년 기준 이탈리아 시장 점유율 1위 브랜드로 약 80만㎡의 공장 단지를 가진 대규모 제조 전문 회사이다.제시는 ‘비범한 오브제로써 일상을 즐겁게 한다’라는 사명을 가지고 있다. 이를 토대로 사람들의 생활패턴을 면밀히 살펴 기발한 아이디어, 독창적인 아름다움과 기술력을 가진 욕실 제품을 만든다.</p><br>
+
+				<p>제품의 종류는 총 6천 가지에 달하며, 품질 및 제품 적합성과 생산방식 및 생산시스템(UNI EN ISO 9001)에 관한 인증서를 보유하고 있다. 품질과 안전 그리고 환경 보호에 관한 인증서 세 가지를 동시에 보유하는 것은 극히 드문 일로, 하이테크 제조기술과 열정적인 장인의 지혜를 강조한다. 제시는 또한 유럽 하이엔드 주방가구 브랜드 불탑(BULTHAUP) 보피(BOFFI), 프랑케(FRANKE), 포스터(FOSTER), 엘케이(ELKAY), 살바라니(SALVARANI 등)에 OEM, ODM으로 제품을 공급한다.</p>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="history-img2"><h2>COLLECTION</h2></div>
+		<div class="line"><img src="img/line.png" alt="line"></div>
+		<div class="collection-content">
+			<div class="collection-img1">
+				<div class="coll-1"></div>
+				<h3>01 – GESSI 316</h3>
+				<h4>MECCANCA</h4>
+			</div>
+			<div class="collection-img2">
+				<div class="coll-2"></div>
+				<h3>02 – RETTANGOLO</h3>
+				<h4>RETTANGOLO K</h4>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="history-img3"><h2>BRAND DESINGER</h2></div>
+		<div class="line"><img src="img/line.png" alt="line"></div>
+		<div class="design-txt">
+			<h2 class="design-txt1">-  David rockwell</h2>
+			<h4 class="design-txt2">“The Inciso concept embodies the warm modern sensibility of American Design.”</h4>
+		</div>
+	</section>
+<div id="section3">
+	<h3 class="related">RELATED PRODUCTS</h3>
+	<div class="section3-box1"><a href="#">
+		<div class="section3-img"><img src="img/relate-9.jpg" alt="img"></div>
+		<div class="section3-txt">GOCCIA</div></a>
+	</div>
+	<div class="section3-box2"><a href="#">
+		<div class="section3-img"><img src="img/relate-10.jpg" alt="img"></div>
+		<div class="section3-txt">ELEGANZA</div></a>
+	</div>
+	<div class="section3-box3"><a href="#">
+		<div class="section3-img"><img src="img/relate-11.jpg" alt="img"></div>
+		<div class="section3-txt">RETTANGOLO-K</div></a>
+	</div>
+	<div class="section3-box4"><a href="#">
+		<div class="section3-img"><img src="img/relate-12.jpg" alt="img"></div>
+		<div class="section3-txt">INCISO</div></a>
+	</div>
+	
+</div>
+<div class="section fp-auto-height">
+<footer>
+	<div class="footer-inner">
+		<div class="more2"><a href="products.html">VIEW&nbsp;&nbsp;MORE&nbsp;&nbsp;PRODUCTS&nbsp;&nbsp;+</a></div>
+		<div class="footer-top">
+			<div class="logo3"><img src="img/logo.png" alt="로고"></div>
+			<ul class="footer-gnb">
+				<li><a href="nexus.html">NEXUS</a></li>
+				<li><a href="products.html">PRODUCTS</a></li>
+				<li><a href="brands.html">BRANDS</a></li>
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+			<div class="sns"><a href="#"><img src="img/insta.png" alt="인스타그램"></a></div>
+		</div>
+		<div class="footer-bottom">
+			<address>
+				(주)한샘넥서스&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서울시 서초구 방배로 285&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표이사 이영식&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사업자 등록번호 : 114-81-68690<br>
+				전화문의 SHOWROOM : +82 1670-1950      메일문의 : nexusgallery@nexus-official.com<br>
+				&copy; HANSSEM NEXUS 2020. All rights reserved
+			</address>
+			<div class="ad"><a href="#">개인정보취급방침</a></div>
+		</div>
+	</div>
+</footer>
+</div>
+</div>
+
+
+
+</body>
+</html>

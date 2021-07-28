@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>nexus-parksoyeon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery-3.5.1.js?var=1"></script>
+<script src="js/main.js?var=1"></script>
+<script src="swiper/swiper.js?var=1"></script>
+<link rel="stylesheet" href="swiper/swiper1.css?var=1">
+<link rel="stylesheet" href="css/main.css?var=2">
+</head>
+<body>
+<header>
+	<div id="header-top">
+		<ul>
+			<li><a href="#" class="lang1">KR</a></li>
+			<li><a href="#" class="lang2">EN</a></li>
+			<li><a href="#" class="lang3">CN</a></li>
+		</ul>
+		<div class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></div>
+		<div class="sch"><a href="#"><img src="img/header_sch.png" alt="search"></a></div>
+		<input type="text" placeholder="search" id="mysearch" autofocus>
+		<span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+			<a href="nexus.html">NEXUS</a>
+			<a href="products.html">PRODUCTS</a>
+			<a href="brands.html">BRANDS</a>
+			<a href="news.html">NEWS</a>
+			<a href="contact.html">CONTACT</a>
+	  </div>
+	</div>
+	<span style="font-size:33px;cursor:pointer" onclick="openNav()" class="btn">&#9776;</span>
+	</div>
+
+	<div id="header-bottom">
+		<nav id="gnb">
+			<ul>
+				<li><a href="nexus.html">NEXUS</a></li>
+				<li><a href="products.html">PRODUCTS</a></li>
+				<li><a href="brands.html">BRANDS</a></li>
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>  
+<div class="swiper-container">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+			<div class="txt1">
+				Nexus flagship<br>
+				seoul gallery	
+			</div>
+			<div class="txt2">
+			인테리어에 대한 새로운 가치를 제안하는<br>
+			문화공간, 넥서스 플래그십 서울 갤러리 입니다.</div>
+			<div class="more"><a href="nexus.html">VIEW&nbsp;&nbsp;MORE&nbsp;&nbsp;STORY&nbsp;&nbsp;+</a></div>
+		</div>
+		<div class="swiper-slide">
+			<div class="txt3">
+				넥서스 플래그십 서울 갤러리의<br>
+				프리미엄 공간에 당신을 초대합니다.
+			</div>
+			<div class="txt4">
+			넥서스는 인테리어 트렌드의 리더로서, 역량있는 디자이너들과의 협업을 통해<br>
+			넥서스 플래그십 서울 갤러리 (Nexus Flagship Seoul Gallery)가<br>
+			국내는 물론 세계적인 인테리어 디자인 허브가 될 수 있도록 공간을 만들어 나갈 것입니다.</div>
+			<div class="more2"><a href="products.html">VIEW&nbsp;&nbsp;MORE&nbsp;&nbsp;PRODUCTS&nbsp;&nbsp;+</a></div>
+		</div>
+        <div class="swiper-slide">
+			<div class="txt5">" 상상 이상의 공간을 제안하다. "</div>
+			<div class="txt6">
+			세계적인 인테리어 디자인 브랜드와 함께 넥서스만의<br>
+			프리미엄 공간을 제안합니다.</div>
+			<div class="more3"><a href="brands.html">VIEW&nbsp;&nbsp;MORE&nbsp;&nbsp;BRNADS&nbsp;&nbsp;+</a></div>
+		</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+</div>
+
+<script>
+var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 0,
+        centeredSlides: true,
+		speed:700,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+  });
+</script>
+
+</body>
+</html>

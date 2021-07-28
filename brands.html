@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>nexus-parksoyeon</title>
+<style>
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+	}
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); 
+	}
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+	} 
+}
+
+@keyframes pulse {
+	0% {
+	-webkit-transform: translate(0, 0);
+			transform: translate(0, 0); 
+	}
+	50% {
+	-webkit-transform: translate(0, 10px);
+			transform: translate(0, 10px); 
+	}
+	100% {
+	-webkit-transform: translate(0, 0);
+			transform: translate(0, 0);
+	} 
+}
+
+.chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 20px;
+	position: relative;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 20px; 
+}
+
+.chevron.right:before {
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg); 
+}
+
+.chevron.bottom:before {
+	top: 0;
+	-webkit-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	transform: rotate(135deg); 
+}
+
+.chevron.left:before {
+	left: 0.25em;
+	-webkit-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg); 
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/brands.js"></script>
+<script src="fullpage/fullpage.js"></script>
+<link rel="stylesheet" href="fullpage/fullpage-3.css">
+<script src="slickslider/slick.js"></script>
+<link rel="stylesheet" href="slickslider/slick.css">
+<link rel="stylesheet" href="slickslider/slick-theme2.css">
+<link rel="stylesheet" href="css/brands.css?var=3">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<header>
+	<div id="header-top">
+		<ul>
+			<li><a href="#" class="lang1">KR</a></li>
+			<li><a href="#" class="lang2">EN</a></li>
+			<li><a href="#" class="lang3">CN</a></li>
+		</ul>
+		<div class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></div>
+		<div class="sch"><a href="#"><img src="img/header_sch.png" alt="search"></a></div>
+		<input type="text" placeholder="search" id="mysearch" autofocus>
+		<span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+			<a href="nexus.html">NEXUS</a>
+			<a href="products.html">PRODUCTS</a>
+			<a href="brands.html">BRANDS</a>
+			<a href="news.html">NEWS</a>
+			<a href="contact.html">CONTACT</a>
+	  </div>
+	</div>
+	<span style="font-size:33px;cursor:pointer" onclick="openNav()" class="btn">&#9776;</span>
+	</div>
+
+	<div id="header-bottom">
+		<nav id="gnb">
+			<ul>
+				<li><a href="nexus.html">NEXUS</a></li>
+				<li><a href="products.html">PRODUCTS</a></li>
+				<li><a href="brands.html">BRANDS</a></li>
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>  
+
+<div id="fullpage">
+	<section class="section" data-anchor="sect1">
+		<h2 class="title1 animate__animated animate__fadeInDown">BRANDS</h2>
+		<h3 class="title2 animate__animated animate__fadeInDown">넥서스는 공간에 대한 최고의 가치를 추구하는<br> 
+			인테리어 디자인 전문 회사입니다.</h3>
+		<span class="hero__scroll">
+			<p>Scroll down</p>
+			<i class="chevron bottom"></i>
+		</span>  
+	</section>
+	<section class="section" data-anchor="sect2">
+		<div class="slide" data-anchor="slide1">
+			<div class="brand1"><a href="brands-molteni.html"><img src="img/molteni.png" alt="img"></a></div>
+			<div class="brand2"><a href="brands-dada.html"><img src="img/dada.png" alt="img"></a></div>
+			<div class="brand3"><a href="brands-gessi.html"><img src="img/gessi.png" alt="img"></a></div>
+		<div class="logo-brand">
+			<div class="brand10"><a href="brands-molteni.html"><img src="img/molteni.png" alt="img"></a></div>
+			<div class="brand11"><a href="brands-dada.html"><img src="img/dada.png" alt="img"></a></div>
+			<div class="brand12"><a href="brands-gessi.html"><img src="img/gessi.png" alt="img"></a></div>
+			<div class="brand13"><a href="brands-kettal.html"><img src="img/kettal.png" alt="img"></a></div>
+			<div class="brand14"><a href="brands-fontana.html"><img src="img/fontana.png" alt="img"></a></div>
+			<div class="brand15"><a href="brands-foglie.html"><img src="img/Logo-fogliedoro.png" alt="img"></a></div>
+		</div>
+		</div>
+		<div class="slide" data-anchor="slide2">
+			<div class="brand4"><a href="brands-kettal.html"><img src="img/kettal.png" alt="img"></a></div>
+			<div class="brand5"><a href="brands-fontana.html"><img src="img/fontana.png" alt="img"></a></div>
+			<div class="brand6"><a href="brands-foglie.html"><img src="img/Logo-fogliedoro.png" alt="img"></a></div>
+		</div>
+	</section>
+
+
+<div class="section fp-auto-height">
+<footer>
+	<div class="footer-inner">
+		<div class="footer-top">
+			<div class="logo3"><img src="img/logo.png" alt="로고"></div>
+			<ul class="footer-gnb">
+				<li><a href="nexus.html">NEXUS</a></li>
+				<li><a href="products.html">PRODUCTS</a></li>
+				<li><a href="brands.html">BRANDS</a></li>
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+			<div class="sns"><a href="#"><img src="img/insta.png" alt="인스타그램"></a></div>
+		</div>
+		<div class="footer-bottom">
+			<address>
+				(주)한샘넥서스&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서울시 서초구 방배로 285&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표이사 이영식&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사업자 등록번호 : 114-81-68690<br>
+				전화문의 SHOWROOM : +82 1670-1950      메일문의 : nexusgallery@nexus-official.com<br>
+				&copy; HANSSEM NEXUS 2020. All rights reserved
+			</address>
+			<div class="ad"><a href="#">개인정보취급방침</a></div>
+		</div>
+	</div>
+</footer>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
